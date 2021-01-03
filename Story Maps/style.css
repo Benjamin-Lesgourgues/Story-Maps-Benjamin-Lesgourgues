@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    background-color:white;
+}
+
+
+/* Titres */
+
+h1{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: brown;
+    font-size: 100px;
+    background-color: rgb(245, 228, 190); 
+    padding: 20px;
+}
+
+h2{
+    color: rgb(206, 118, 18);
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+
+
+/* Définition */
+
+.def-boite {
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Histoire */
+
+.histoire{
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* CSS grille */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "text-1 map . ."
+      "text-2 map . ."
+      "text-3 map . .";
+}
+.text-1 { 
+    grid-area: text-1;
+    background-color: rgb(245, 212, 190);
+    padding: 50px;
+}
+.text-2 { 
+    grid-area: text-2;
+    background-color: rgb(245, 228, 190); 
+    padding: 50px;
+}
+.text-3 { 
+    grid-area: text-3; 
+    background-color: rgb(197, 224, 223);
+    padding: 50px;
+}
+.map { 
+    grid-area: map;
+    width: 100%; 
+    
+}
+
